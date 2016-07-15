@@ -20,16 +20,20 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             let AppComponent = class AppComponent {
                 constructor() {
-                    this.title = 'shubham';
+                    this.name = 'shubham chaturvedi';
+                    this.subTitle = ['Sachin verma', 'Rishabh tripathi', 'Arpit Tyagi'];
+                }
+                onClick(itemName) {
+                    this.name = itemName;
+                }
+                addName(myName) {
+                    this.subTitle.push(myName);
                 }
             };
             AppComponent = __decorate([
                 core_1.Component({
                     selector: 'my-app',
-                    template: `
-             <h1>Welcome to my app<h1>
-             {{title}}
-             `
+                    templateUrl: 'templates/app.html'
                 }), 
                 __metadata('design:paramtypes', [])
             ], AppComponent);

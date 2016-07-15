@@ -1,0 +1,23 @@
+<head>
+    <nav>
+        
+    </nav>
+</head>
+<div class="artistSearch">
+    <div class="artistSearch2">
+        <h2>Welcome to my app</h2>
+            <title></title>
+            <span *ngIf="name">Title : {{name}}</span><br>
+            <label *ngIf="name" [innerHTML]="name"></label><br>
+            <input #newName
+            (keyup.enter)="addName(newName.value);newName.value=''"
+            (blur)="addName(newName.value);newName.value=''"
+            >
+            <button (click)="addName(newName.value);newName.value=''">add</button>
+            <ul class="art">
+                <li (click)="onClick(items)" *ngFor="#items of subTitle">
+                    <h3>{{items}}</h3>
+                </li>
+            </ul>
+    </div>
+</div>
