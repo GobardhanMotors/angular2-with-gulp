@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["boot.ts"],"sourcesContent":["import {bootstrap} from 'angular2/platform/browser';\r\nimport{AppComponent} from './app.component';\r\n\r\nbootstrap(AppComponent);"],"file":"boot.ts","sourceRoot":"/source/"}
